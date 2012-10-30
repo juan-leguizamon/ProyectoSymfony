@@ -1,0 +1,53 @@
+<h1>PoliticaCosto</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Tamaño</th>
+            <td>{{ entity.tamaño }}</td>
+        </tr>
+        <tr>
+            <th>Peso</th>
+            <td>{{ entity.peso }}</td>
+        </tr>
+        <tr>
+            <th>Volumen</th>
+            <td>{{ entity.volumen }}</td>
+        </tr>
+        <tr>
+            <th>Pais</th>
+            <td>{{ entity.pais }}</td>
+        </tr>
+        <tr>
+            <th>Ciudad</th>
+            <td>{{ entity.ciudad }}</td>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <td>{{ entity.cantidad }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('politica') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('politica_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('politica_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

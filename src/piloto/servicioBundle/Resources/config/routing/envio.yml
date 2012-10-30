@@ -1,0 +1,30 @@
+envio:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Envio:index" }
+
+envio_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Envio:show" }
+
+envio_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Envio:new" }
+
+envio_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Envio:create" }
+    requirements: { _method: post }
+
+envio_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Envio:edit" }
+
+envio_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Envio:update" }
+    requirements: { _method: post }
+
+envio_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Envio:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,30 @@
+destino:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Destinatario:index" }
+
+destino_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Destinatario:show" }
+
+destino_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Destinatario:new" }
+
+destino_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Destinatario:create" }
+    requirements: { _method: post }
+
+destino_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Destinatario:edit" }
+
+destino_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Destinatario:update" }
+    requirements: { _method: post }
+
+destino_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Destinatario:delete" }
+    requirements: { _method: post }

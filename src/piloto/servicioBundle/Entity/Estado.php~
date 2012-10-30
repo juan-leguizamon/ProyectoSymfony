@@ -1,0 +1,32 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Estado
+ *
+ * @ORM\Table(name="estado")
+ * @ORM\Entity
+ */
+class Estado
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer $entregado
+     *
+     * @ORM\Column(name="Entregado", type="integer", nullable=true)
+     */
+    private $entregado;
+
+
+}

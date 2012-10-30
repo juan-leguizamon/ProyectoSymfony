@@ -1,0 +1,30 @@
+aereo:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Aereo:index" }
+
+aereo_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Aereo:show" }
+
+aereo_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Aereo:new" }
+
+aereo_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Aereo:create" }
+    requirements: { _method: post }
+
+aereo_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Aereo:edit" }
+
+aereo_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Aereo:update" }
+    requirements: { _method: post }
+
+aereo_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Aereo:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,53 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Facturacion
+ *
+ * @ORM\Table(name="facturacion")
+ * @ORM\Entity
+ */
+class Facturacion
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer $idEnvio
+     *
+     * @ORM\Column(name="ID_Envio", type="integer", nullable=false)
+     */
+    private $idEnvio;
+
+    /**
+     * @var string $firmaDestinatario
+     *
+     * @ORM\Column(name="Firma_Destinatario", type="string", length=12, nullable=false)
+     */
+    private $firmaDestinatario;
+
+    /**
+     * @var string $firmaMensajero
+     *
+     * @ORM\Column(name="Firma_Mensajero", type="string", length=12, nullable=false)
+     */
+    private $firmaMensajero;
+
+    /**
+     * @var float $costoEnvio
+     *
+     * @ORM\Column(name="Costo_Envio", type="float", nullable=false)
+     */
+    private $costoEnvio;
+
+
+}

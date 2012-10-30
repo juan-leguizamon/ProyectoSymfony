@@ -1,0 +1,30 @@
+facturacion:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Facturacion:index" }
+
+facturacion_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Facturacion:show" }
+
+facturacion_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Facturacion:new" }
+
+facturacion_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Facturacion:create" }
+    requirements: { _method: post }
+
+facturacion_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Facturacion:edit" }
+
+facturacion_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Facturacion:update" }
+    requirements: { _method: post }
+
+facturacion_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Facturacion:delete" }
+    requirements: { _method: post }

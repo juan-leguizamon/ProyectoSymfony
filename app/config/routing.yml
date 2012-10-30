@@ -1,0 +1,55 @@
+
+servicio:
+    resource: "@servicioBundle/Resources/config/routing.yml"
+    prefix:   /
+servicioBundle_aereo:
+        resource: "@servicioBundle/Resources/config/routing/aereo.yml"
+        prefix:   /aereo
+servicioBundle_destino:
+        resource: "@servicioBundle/Resources/config/routing/destinatario.yml"
+        prefix:   /destino
+servicioBundle_envio:
+        resource: "@servicioBundle/Resources/config/routing/envio.yml"
+        prefix:   /envio
+servicioBundle_paquete:
+        resource: "@servicioBundle/Resources/config/routing/paquete.yml"
+        prefix:   /paquete
+servicioBundle_politicas:
+        resource: "@servicioBundle/Resources/config/routing/politicacosto.yml"
+        prefix:   /politicas
+servicioBundle_formulario:
+        resource: "@servicioBundle/Resources/config/routing/formulario.yml"
+        prefix:   /formulario
+servicioBundle_remitente:
+        resource: "@servicioBundle/Resources/config/routing/remitente.yml"
+        prefix:   /remitente
+servicioBundle_tiporemitente:
+        resource: "@servicioBundle/Resources/config/routing/tiporemitente.yml"
+        prefix:   /tiporemitente
+servicioBundle_mensajero:
+        resource: "@servicioBundle/Resources/config/routing/mensajero.yml"
+        prefix:   /mensajero
+servicioBundle_formaspago:
+        resource: "@servicioBundle/Resources/config/routing/formaspago.yml"
+        prefix:   /formaspago
+servicioBundle_formasenvio:
+        resource: "@servicioBundle/Resources/config/routing/formasenvio.yml"
+        prefix:   /formasenvio
+servicioBundle_facturacion:
+        resource: "@servicioBundle/Resources/config/routing/facturacion.yml"
+        prefix:   /facturacion
+servicioBundle_estado:
+        resource: "@servicioBundle/Resources/config/routing/estado.yml"
+        prefix:   /estado
+servicioBundle_empresaasociada:
+        resource: "@servicioBundle/Resources/config/routing/empresaasociada.yml"
+        prefix:   /empresaasociada
+
+
+
+      
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal

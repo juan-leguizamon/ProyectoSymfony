@@ -1,0 +1,69 @@
+servicio_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: servicioBundle:Default:index }
+    
+servicioBundle_paquete:
+    resource: "@servicioBundle/Resources/config/routing/paquete.yml"
+    prefix:   /paquete
+    
+servicioBundle_politica:
+    resource: "@servicioBundle/Resources/config/routing/politicacosto.yml"
+    prefix:   /politica
+    
+servicioBundle_envio:
+    resource: "@servicioBundle/Resources/config/routing/envio.yml"
+    prefix:   /envio
+    
+servicioBundle_destino:
+    resource: "@servicioBundle/Resources/config/routing/destinatario.yml"
+    prefix:   /destino
+    
+servicioBundle_formulario:
+    resource: "@servicioBundle/Resources/config/routing/formulario.yml"
+    prefix:   /formulario
+    
+servicioBundle_remitente:
+    resource: "@servicioBundle/Resources/config/routing/remitente.yml"
+    prefix:   /remitente
+    
+servicioBundle_facturacion:
+    resource: "@servicioBundle/Resources/config/routing/facturacion.yml"
+    prefix:   /facturacion
+    
+servicioBundle_mensajero:
+    resource: "@servicioBundle/Resources/config/routing/mensajero.yml"
+    prefix:   /mensajero
+    
+servicioBundle_formaspago:
+    resource: "@servicioBundle/Resources/config/routing/formaspago.yml"
+    prefix:   /formaspago
+    
+servicioBundle_formasenvio:
+    resource: "@servicioBundle/Resources/config/routing/formasenvio.yml"
+    prefix:   /formasenvio
+    
+servicioBundle_empresaasociada:
+    resource: "@servicioBundle/Resources/config/routing/empresaasociada.yml"
+    prefix:   /empresaasociada
+
+servicioBundle_estado:
+    resource: "@servicioBundle/Resources/config/routing/estado.yml"
+    prefix:   /estado
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

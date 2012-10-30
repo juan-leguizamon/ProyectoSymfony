@@ -1,0 +1,39 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Mensajero
+ *
+ * @ORM\Table(name="mensajero")
+ * @ORM\Entity
+ */
+class Mensajero
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $nombre
+     *
+     * @ORM\Column(name="Nombre", type="string", length=12, nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var string $cedula
+     *
+     * @ORM\Column(name="Cedula", type="string", length=10, nullable=false)
+     */
+    private $cedula;
+
+
+}

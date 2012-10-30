@@ -1,0 +1,30 @@
+remitente:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Remitente:index" }
+
+remitente_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Remitente:show" }
+
+remitente_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Remitente:new" }
+
+remitente_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Remitente:create" }
+    requirements: { _method: post }
+
+remitente_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Remitente:edit" }
+
+remitente_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Remitente:update" }
+    requirements: { _method: post }
+
+remitente_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Remitente:delete" }
+    requirements: { _method: post }

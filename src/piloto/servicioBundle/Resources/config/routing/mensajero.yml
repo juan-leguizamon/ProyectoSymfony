@@ -1,0 +1,30 @@
+mensajero:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Mensajero:index" }
+
+mensajero_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Mensajero:show" }
+
+mensajero_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Mensajero:new" }
+
+mensajero_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Mensajero:create" }
+    requirements: { _method: post }
+
+mensajero_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Mensajero:edit" }
+
+mensajero_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Mensajero:update" }
+    requirements: { _method: post }
+
+mensajero_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Mensajero:delete" }
+    requirements: { _method: post }

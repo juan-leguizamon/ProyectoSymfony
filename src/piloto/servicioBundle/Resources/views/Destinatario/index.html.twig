@@ -1,0 +1,45 @@
+<h1>Destinatario list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Notelefonico</th>
+            <th>Pais</th>
+            <th>Ciudad</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('destino_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.nombre }}</td>
+            <td>{{ entity.direccion }}</td>
+            <td>{{ entity.noTelefonico }}</td>
+            <td>{{ entity.pais }}</td>
+            <td>{{ entity.ciudad }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('destino_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('destino_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('destino_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

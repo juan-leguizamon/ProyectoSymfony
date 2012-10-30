@@ -1,0 +1,46 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Paquete
+ *
+ * @ORM\Table(name="paquete")
+ * @ORM\Entity
+ */
+class Paquete
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer $telefono
+     *
+     * @ORM\Column(name="Telefono", type="integer", nullable=false)
+     */
+    private $telefono;
+
+    /**
+     * @var integer $destino
+     *
+     * @ORM\Column(name="Destino", type="integer", nullable=false)
+     */
+    private $destino;
+
+    /**
+     * @var integer $idPoliticaCosto
+     *
+     * @ORM\Column(name="ID_Politica_Costo", type="integer", nullable=false)
+     */
+    private $idPoliticaCosto;
+
+
+}

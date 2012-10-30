@@ -1,0 +1,45 @@
+<h1>Formulario</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Iddestinatario</th>
+            <td>{{ entity.idDestinatario }}</td>
+        </tr>
+        <tr>
+            <th>Idremitente</th>
+            <td>{{ entity.idRemitente }}</td>
+        </tr>
+        <tr>
+            <th>Idformapago</th>
+            <td>{{ entity.idFormaPago }}</td>
+        </tr>
+        <tr>
+            <th>Idpaquete</th>
+            <td>{{ entity.idPaquete }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('formulario') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('formulario_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('formulario_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

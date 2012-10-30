@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Facturacion" table="facturacion">
+    <id name="id" type="integer" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idEnvio" type="integer" column="ID_Envio" nullable="false"/>
+    <field name="firmaDestinatario" type="string" column="Firma_Destinatario" length="12" nullable="false"/>
+    <field name="firmaMensajero" type="string" column="Firma_Mensajero" length="12" nullable="false"/>
+    <field name="costoEnvio" type="float" column="Costo_Envio" nullable="false"/>
+  </entity>
+</doctrine-mapping>

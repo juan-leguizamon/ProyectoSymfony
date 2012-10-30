@@ -1,0 +1,43 @@
+<h1>Envio list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Idformasenvio</th>
+            <th>Idformulario</th>
+            <th>Idestado</th>
+            <th>Idmensajero</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('envio_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.idFormasEnvio }}</td>
+            <td>{{ entity.idFormulario }}</td>
+            <td>{{ entity.idEstado }}</td>
+            <td>{{ entity.idMensajero }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('envio_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('envio_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('envio_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

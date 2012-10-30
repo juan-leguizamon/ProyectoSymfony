@@ -1,0 +1,49 @@
+<h1>EmpresaAsociada</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Nit</th>
+            <td>{{ entity.nit }}</td>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <td>{{ entity.nombre }}</td>
+        </tr>
+        <tr>
+            <th>Direccion</th>
+            <td>{{ entity.direccion }}</td>
+        </tr>
+        <tr>
+            <th>Pais</th>
+            <td>{{ entity.pais }}</td>
+        </tr>
+        <tr>
+            <th>Ciudad</th>
+            <td>{{ entity.ciudad }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('empresaasociada') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('empresaasociada_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('empresaasociada_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

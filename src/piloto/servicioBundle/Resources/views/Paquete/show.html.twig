@@ -1,0 +1,41 @@
+<h1>Paquete</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Telefono</th>
+            <td>{{ entity.telefono }}</td>
+        </tr>
+        <tr>
+            <th>Destino</th>
+            <td>{{ entity.destino }}</td>
+        </tr>
+        <tr>
+            <th>Idpoliticacosto</th>
+            <td>{{ entity.idPoliticaCosto }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('paquete') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('paquete_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('paquete_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

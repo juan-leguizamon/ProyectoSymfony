@@ -1,0 +1,30 @@
+tiporemitente:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:TipoRemitente:index" }
+
+tiporemitente_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:TipoRemitente:show" }
+
+tiporemitente_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:TipoRemitente:new" }
+
+tiporemitente_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:TipoRemitente:create" }
+    requirements: { _method: post }
+
+tiporemitente_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:TipoRemitente:edit" }
+
+tiporemitente_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:TipoRemitente:update" }
+    requirements: { _method: post }
+
+tiporemitente_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:TipoRemitente:delete" }
+    requirements: { _method: post }

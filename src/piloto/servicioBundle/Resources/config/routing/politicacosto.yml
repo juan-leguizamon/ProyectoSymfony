@@ -1,0 +1,30 @@
+politica:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:PoliticaCosto:index" }
+
+politica_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:PoliticaCosto:show" }
+
+politica_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:PoliticaCosto:new" }
+
+politica_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:PoliticaCosto:create" }
+    requirements: { _method: post }
+
+politica_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:PoliticaCosto:edit" }
+
+politica_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:PoliticaCosto:update" }
+    requirements: { _method: post }
+
+politica_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:PoliticaCosto:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,60 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Destinatario
+ *
+ * @ORM\Table(name="destinatario")
+ * @ORM\Entity
+ */
+class Destinatario
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $nombre
+     *
+     * @ORM\Column(name="Nombre", type="string", length=12, nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var string $direccion
+     *
+     * @ORM\Column(name="Direccion", type="string", length=12, nullable=false)
+     */
+    private $direccion;
+
+    /**
+     * @var string $noTelefonico
+     *
+     * @ORM\Column(name="No_Telefonico", type="string", length=12, nullable=false)
+     */
+    private $noTelefonico;
+
+    /**
+     * @var string $pais
+     *
+     * @ORM\Column(name="Pais", type="string", length=10, nullable=false)
+     */
+    private $pais;
+
+    /**
+     * @var string $ciudad
+     *
+     * @ORM\Column(name="Ciudad", type="string", length=10, nullable=false)
+     */
+    private $ciudad;
+
+
+}

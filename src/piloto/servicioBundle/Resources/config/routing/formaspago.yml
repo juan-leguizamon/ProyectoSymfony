@@ -1,0 +1,30 @@
+formaspago:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:FormasPago:index" }
+
+formaspago_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:FormasPago:show" }
+
+formaspago_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:FormasPago:new" }
+
+formaspago_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:FormasPago:create" }
+    requirements: { _method: post }
+
+formaspago_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:FormasPago:edit" }
+
+formaspago_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:FormasPago:update" }
+    requirements: { _method: post }
+
+formaspago_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:FormasPago:delete" }
+    requirements: { _method: post }

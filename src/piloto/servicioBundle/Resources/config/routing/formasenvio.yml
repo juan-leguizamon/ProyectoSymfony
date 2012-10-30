@@ -1,0 +1,30 @@
+formasenvio:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:FormasEnvio:index" }
+
+formasenvio_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:FormasEnvio:show" }
+
+formasenvio_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:FormasEnvio:new" }
+
+formasenvio_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:FormasEnvio:create" }
+    requirements: { _method: post }
+
+formasenvio_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:FormasEnvio:edit" }
+
+formasenvio_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:FormasEnvio:update" }
+    requirements: { _method: post }
+
+formasenvio_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:FormasEnvio:delete" }
+    requirements: { _method: post }

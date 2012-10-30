@@ -1,0 +1,30 @@
+paquete:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Paquete:index" }
+
+paquete_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Paquete:show" }
+
+paquete_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Paquete:new" }
+
+paquete_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Paquete:create" }
+    requirements: { _method: post }
+
+paquete_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Paquete:edit" }
+
+paquete_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Paquete:update" }
+    requirements: { _method: post }
+
+paquete_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Paquete:delete" }
+    requirements: { _method: post }

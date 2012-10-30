@@ -1,0 +1,43 @@
+<h1>Facturacion list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Idenvio</th>
+            <th>Firmadestinatario</th>
+            <th>Firmamensajero</th>
+            <th>Costoenvio</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('facturacion_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.idEnvio }}</td>
+            <td>{{ entity.firmaDestinatario }}</td>
+            <td>{{ entity.firmaMensajero }}</td>
+            <td>{{ entity.costoEnvio }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('facturacion_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('facturacion_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('facturacion_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

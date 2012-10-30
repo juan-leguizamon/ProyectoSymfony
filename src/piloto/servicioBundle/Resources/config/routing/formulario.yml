@@ -1,0 +1,30 @@
+formulario:
+    pattern:  /
+    defaults: { _controller: "servicioBundle:Formulario:index" }
+
+formulario_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "servicioBundle:Formulario:show" }
+
+formulario_new:
+    pattern:  /new
+    defaults: { _controller: "servicioBundle:Formulario:new" }
+
+formulario_create:
+    pattern:  /create
+    defaults: { _controller: "servicioBundle:Formulario:create" }
+    requirements: { _method: post }
+
+formulario_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "servicioBundle:Formulario:edit" }
+
+formulario_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "servicioBundle:Formulario:update" }
+    requirements: { _method: post }
+
+formulario_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "servicioBundle:Formulario:delete" }
+    requirements: { _method: post }

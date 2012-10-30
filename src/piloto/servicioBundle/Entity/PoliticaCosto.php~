@@ -1,0 +1,67 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\PoliticaCosto
+ *
+ * @ORM\Table(name="politica_costo")
+ * @ORM\Entity
+ */
+class PoliticaCosto
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $tamaño
+     *
+     * @ORM\Column(name="Tamaño", type="string", length=12, nullable=false)
+     */
+    private $tamaño;
+
+    /**
+     * @var float $peso
+     *
+     * @ORM\Column(name="Peso", type="float", nullable=false)
+     */
+    private $peso;
+
+    /**
+     * @var float $volumen
+     *
+     * @ORM\Column(name="Volumen", type="float", nullable=false)
+     */
+    private $volumen;
+
+    /**
+     * @var string $pais
+     *
+     * @ORM\Column(name="Pais", type="string", length=12, nullable=false)
+     */
+    private $pais;
+
+    /**
+     * @var string $ciudad
+     *
+     * @ORM\Column(name="Ciudad", type="string", length=12, nullable=false)
+     */
+    private $ciudad;
+
+    /**
+     * @var integer $cantidad
+     *
+     * @ORM\Column(name="Cantidad", type="integer", nullable=false)
+     */
+    private $cantidad;
+
+
+}

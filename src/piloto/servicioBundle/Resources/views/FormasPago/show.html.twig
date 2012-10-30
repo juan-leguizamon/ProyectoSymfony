@@ -1,0 +1,37 @@
+<h1>FormasPago</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Remitente</th>
+            <td>{{ entity.remitente }}</td>
+        </tr>
+        <tr>
+            <th>Destinatario</th>
+            <td>{{ entity.destinatario }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('formaspago') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('formaspago_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('formaspago_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

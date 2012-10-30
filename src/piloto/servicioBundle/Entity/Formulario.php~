@@ -1,0 +1,53 @@
+<?php
+
+namespace piloto\servicioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * piloto\servicioBundle\Entity\Formulario
+ *
+ * @ORM\Table(name="formulario")
+ * @ORM\Entity
+ */
+class Formulario
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer $idDestinatario
+     *
+     * @ORM\Column(name="ID_Destinatario", type="integer", nullable=false)
+     */
+    private $idDestinatario;
+
+    /**
+     * @var integer $idRemitente
+     *
+     * @ORM\Column(name="ID_Remitente", type="integer", nullable=false)
+     */
+    private $idRemitente;
+
+    /**
+     * @var integer $idFormaPago
+     *
+     * @ORM\Column(name="ID_Forma_Pago", type="integer", nullable=false)
+     */
+    private $idFormaPago;
+
+    /**
+     * @var integer $idPaquete
+     *
+     * @ORM\Column(name="ID_Paquete", type="integer", nullable=false)
+     */
+    private $idPaquete;
+
+
+}
